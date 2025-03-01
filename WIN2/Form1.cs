@@ -12,7 +12,7 @@ namespace APLICACION_BROMA
 {
     public partial class Form1 : Form
     {
-        int x = 417;
+        private Random random = new Random();
         public Form1()
         {
             InitializeComponent();
@@ -25,9 +25,13 @@ namespace APLICACION_BROMA
 
         private void BTN_CANCEL_MouseHover(object sender, EventArgs e)
         {
-            x = x + 200;
+            int maxX = this.ClientSize.Width - BTN_CANCEL.Width;
+            int maxY = this.ClientSize.Height - BTN_CANCEL.Height;
 
-            BTN_CANCEL.Location = new Point(x, 224);
+            int newX = random.Next(0, maxX);
+            int newY = random.Next(0, maxY);
+
+            BTN_CANCEL.Location = new Point(newX, newY);
         }
     }
 

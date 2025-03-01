@@ -47,7 +47,7 @@
             // BTN_CANCEL
             // 
             this.BTN_CANCEL.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_CANCEL.Location = new System.Drawing.Point(364, 365);
+            this.BTN_CANCEL.Location = new System.Drawing.Point(268, 333);
             this.BTN_CANCEL.Name = "BTN_CANCEL";
             this.BTN_CANCEL.Size = new System.Drawing.Size(400, 91);
             this.BTN_CANCEL.TabIndex = 1;
@@ -58,10 +58,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("SansSerif", 36F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(2)));
-            this.label1.Location = new System.Drawing.Point(85, 94);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(87, 61);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(839, 56);
+            this.label1.Size = new System.Drawing.Size(837, 55);
             this.label1.TabIndex = 2;
             this.label1.Text = "Realmente desea formatear su disco?";
             // 
@@ -70,11 +70,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(971, 517);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.BTN_CANCEL);
             this.Controls.Add(this.BTN_ACEPTAR);
+            this.Controls.Add(this.BTN_CANCEL);
+            this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
             this.PerformLayout();
 
